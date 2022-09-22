@@ -1,24 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+// import data from './data';
+import { useState, useEffect } from 'react';
 
 function App() {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [questions, setQuestions] = useState({});
+
+  useEffect(() => {
+    fetch("https://opentdb.com/api.php?amount=10")
+      .then(res => res.json())
+      .then(
+        (result) => {
+          setIsLoaded(true);
+          setQuestions(result);
+        },
+      )
+  }, [isLoaded])
+
+  function handleClick (){
+    setIsLoaded(false);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <p>Hello, world!</p>
-      </header>
+      <h1>Quiz App</h1>
+      <h2>Description will be here</h2>
+      <button onClick={handleClick} className="button">Start quiz</button>
+      {isLoaded ? <div className='data'>{questions.results[0]["category"]}</div> : "Ждем"}
     </div>
   );
 }
