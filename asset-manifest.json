@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/QuizApp/static/css/main.f32edfb9.css",
-    "main.js": "/QuizApp/static/js/main.9a2788c9.js",
+    "main.css": "/QuizApp/static/css/main.39591933.css",
+    "main.js": "/QuizApp/static/js/main.87ff2d9f.js",
     "static/media/best.svg": "/QuizApp/static/media/best.360d50f6a35222d8ec2b47dd95c6edcf.svg",
-    "static/media/Try.svg": "/QuizApp/static/media/Try.e2097cdb4428880b5816520cff624a73.svg",
+    "static/media/TryAgain.svg": "/QuizApp/static/media/TryAgain.1fbf009a0ed29e5e23e109e62d01dd8a.svg",
     "static/media/Spinner.svg": "/QuizApp/static/media/Spinner.32f7518c9f3d723c3385184d7c3f1d0a.svg",
     "index.html": "/QuizApp/index.html",
-    "main.f32edfb9.css.map": "/QuizApp/static/css/main.f32edfb9.css.map",
-    "main.9a2788c9.js.map": "/QuizApp/static/js/main.9a2788c9.js.map"
+    "main.39591933.css.map": "/QuizApp/static/css/main.39591933.css.map",
+    "main.87ff2d9f.js.map": "/QuizApp/static/js/main.87ff2d9f.js.map"
   },
   "entrypoints": [
-    "static/css/main.f32edfb9.css",
-    "static/js/main.9a2788c9.js"
+    "static/css/main.39591933.css",
+    "static/js/main.87ff2d9f.js"
   ]
 }
