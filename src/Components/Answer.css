@@ -1,0 +1,59 @@
+button{
+    background-color: yellow;
+    margin: 5px;
+    width: 200px;
+    height: 60px;
+    line-height: 20px;
+    border-radius: 20px;
+    box-shadow: 0 3px 0px #3c354a;
+    transition-duration: 1s;
+    font-size: 16px;
+    align-items: center;
+}
+
+.answersButtons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+.questionWrapper{
+    width: 100%;
+}
+
+.question{
+    font-size: 30px;
+}
+
+.category{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+hr{
+    border-top: 1px solid black;
+    margin: 20px 0;
+}
+
+.difficulty{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.clicked {
+    color: yellow;
+    background-color: rgb(141, 0, 117);
+    transition-duration: 2s;
+    box-shadow: 0 3px 0px #3c354a;
+    font-size: 20px;
+    outline: rgb(141, 0, 117) 6px solid;
+}
+
+.correct{
+    background-color: green;
+}
+
+button:hover{
+    font-size: 20px;
+    transition-duration: 1s;
+}
